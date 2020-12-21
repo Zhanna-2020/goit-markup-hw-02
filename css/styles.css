@@ -9,6 +9,10 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --light-color: #ffffff;
+  --dark-color: #000000;
+  --team-background-color: #f5f4fa;
+  --footer-background-color: #2f303a;
+  --button-background-color: #f5f4fa;
 }
 
 body {
@@ -21,6 +25,10 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*logo*/
 .logo {
   color: var(--accent-color);
@@ -29,17 +37,15 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  text-decoration: none;
 }
 
 .logo-dark {
-  color: #000000;
+  color: var(--dark-color);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  text-decoration: none;
 }
 
 /*site-nav*/
@@ -50,7 +56,6 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 
 .site-nav a:hover,
@@ -61,7 +66,6 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 .site-nav a.current {
   color: var(--accent-color);
@@ -70,7 +74,6 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 
 .header-contacts a {
@@ -80,7 +83,6 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 .header-contacts a:hover,
 .contacts a:focus {
@@ -90,7 +92,6 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 
 /* hero*/
@@ -135,7 +136,7 @@ ul {
   letter-spacing: 0.03em;
 }
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--team-background-color);
 }
 /*button*/
 .button {
@@ -149,7 +150,6 @@ ul {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  text-decoration: none;
 }
 
 /*our team*/
@@ -174,7 +174,7 @@ section .team-member {
 
 /*footer*/
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer-background-color);
 }
 
 .logo-white {
@@ -184,7 +184,6 @@ section .team-member {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  text-decoration: none;
 }
 
 .footer-address {
@@ -205,14 +204,13 @@ section .team-member {
   font-size: 14px;
   line-height: 1.71px;
   letter-spacing: 0.03em;
-  text-decoration: none;
 }
 
 /*portfolio*/
 
 .button-passive {
   color: var(--title-text-color);
-  background: #f5f4fa;
+  background: var(--button-background-color);
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -242,7 +240,6 @@ section .team-member {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  text-decoration: none;
 }
 
 .project-text {
@@ -251,5 +248,4 @@ section .team-member {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  text-decoration: none;
 }
