@@ -13,6 +13,7 @@
   --team-background-color: #f5f4fa;
   --footer-background-color: #2f303a;
   --button-background-color: #f5f4fa;
+  --hero-background-color: #2f303a;
 }
 
 body {
@@ -30,27 +31,31 @@ a {
 }
 
 /*logo*/
-.logo {
-  color: var(--accent-color);
+
+.logo,
+.logo-dark,
+.logo-white {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+.logo {
+  color: var(--accent-color);
 }
 
 .logo-dark {
   color: var(--dark-color);
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
 /*site-nav*/
-.site-nav a {
-  color: var(--title-text-color);
+
+.site-nav a,
+.site-nav a:hover,
+.site-nav a:focus,
+.site-nav a.current {
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
@@ -58,17 +63,19 @@ a {
   letter-spacing: 0.02em;
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
-  color: var(--accent-color);
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.site-nav a {
+  color: var(--title-text-color);
 }
+
+.site-nav a:hover,
+.site-nav a:focus,
 .site-nav a.current {
   color: var(--accent-color);
+}
+
+.header-contacts a,
+.header-contacts a:hover,
+.contacts a:focus {
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
@@ -78,23 +85,18 @@ a {
 
 .header-contacts a {
   color: var(--main-text-color);
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
+
 .header-contacts a:hover,
 .contacts a:focus {
   color: var(--accent-color);
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 
 /* hero*/
+
+.hero {
+  background-color: var(--hero-background-color);
+}
 
 .hero-title {
   background-color: #2f303a;
@@ -166,7 +168,7 @@ section .team-member {
 .profession-title {
   color: var(--main-text-color);
   font-family: Roboto;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
@@ -179,11 +181,6 @@ section .team-member {
 
 .logo-white {
   color: var(--light-color);
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
 .footer-address {
@@ -196,39 +193,48 @@ section .team-member {
   letter-spacing: 0.03em;
 }
 
-.footer-contacts a {
-  color: var(--main-text-color);
+.footer-contacts a,
+.footer-contacts a:hover,
+.footer-contacts:focus {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.71px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.footer-contacts a {
+  color: var(--main-text-color);
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  color: var(--accent-color);
 }
 
 /*portfolio*/
 
-.button-passive {
-  color: var(--title-text-color);
-  background: var(--button-background-color);
+.button-passive,
+.button-passive:hover,
+.button-passive:focus {
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.button-passive {
+  color: var(--title-text-color);
+  background: var(--button-background-color);
 }
 
 .button-passive:hover,
 .button-passive:focus {
   color: var(--light-color);
   background-color: var(--accent-color);
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /*projects*/
